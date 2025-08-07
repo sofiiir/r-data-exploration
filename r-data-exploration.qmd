@@ -1,0 +1,41 @@
+---
+title: "r-data-exploration"
+format: html
+---
+
+
+```{r}
+library(tidyr)
+library(ggplot2)
+library(skimr)
+library(GGally)
+
+View(diamonds)
+
+names(diamonds)
+
+dim(diamonds)
+
+summary(diamonds)
+
+head(diamonds)
+
+tail(diamonds)
+
+skimr::skim(diamonds)
+
+GGally::ggpairs(diamonds)
+
+ggplot(data = diamonds, aes(x = price, y = carat)) +
+  geom_point()
+
+ggplot(data = diamonds, aes(x = carat)) +
+  geom_histogram()
+```
+
+
+```{r}
+
+
+
+```
